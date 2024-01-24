@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <script src="validationform.js"></script>
+</head>
+
+<body>
+    <center>
+        <font color="blue" size="6" face="arial">Registration Form</font>
+    </center>
+    <br />
+
+    <form onsubmit="return formValidator()" action="success.html"></form>
+
+    First Name(Minimum 6 charaters)
+    <font color="red">*</font>
+    <input type="text" id="firstname" />
+    <br /><br />
+    Last Name
+    <font color="red">*</font>&nbsp;&nbsp;&nbsp;
+    <input type="text" id="lastname" />
+    <br /><br />
+    EmailAddress
+    <font color="red">*</font>&nbsp;&nbsp;&nbsp;
+    <input type="text" id="email" />
+    <font color="red">(one e-mail id only):</font>&nbsp;&nbsp;&nbsp;
+    <font color="redblue">e.g. abc@gmail.com</font>
+    <br /><br />
+    Password(Minimum 6 charaters)
+    <font color="red">*</font>&nbsp;&nbsp;&nbsp;
+    <input type="password" id="password" />
+    <br /><br />
+    Address
+    <font color="red">*</font>&nbsp;&nbsp;&nbsp;
+    <textarea name="textarea" id="Address" cols="20" rows="2"></textarea>
+    <br /><br />
+    Mobile No
+    <font color="red">*</font>&nbsp;&nbsp;&nbsp;
+    <input type="text" id="mobileno" />
+    <br /><br />
+    Gemder:
+    <input type="radio" name="gender" />male
+    <input type="radio" name="gender" />female
+    <br />
+    <br />
+    <input type="submit" value="submit" />
+    <input type="reset" />
+</form>
+</body>
+
+</html>

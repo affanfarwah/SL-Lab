@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+  </head>
+  <body bgcolor="aqua">
+    <center>
+      <h1>Select t <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries & it's capitals</title>
+    <style>h1
+      {
+      color: red;
+      text-align: center;
+      }
+      .textbox1
+      {
+      color: Green; font-size: 15px;
+      font-weight: bold;
+      }
+      </style>he country name to find its capital</h1>
+      <form name="myform">
+        Select Country
+        <select name="country" id="sbox1" onClick="myFunction()" required>
+          <option value=""></option>
+          <option value="New Delhi">India</option>
+          <option value="Canberra">Australia</option>
+          <option value="Washington D.C">America</option>
+          <option value="London">United kingdom</option>
+          <option value="Berlin">Germany</option></select
+        ><br /><br />
+        Capital <input type="text" class="textbox1" id="sbox2" />
+      </form>
+    </center>
+    <script>
+      function myFunction() {
+        var a = document.getElementById("sbox1").value;
+        document.getElementById("sbox2").value = a;
+      }
+    </script>
+  </body>
+</html>

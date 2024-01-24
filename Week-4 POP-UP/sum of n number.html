@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum</title>
+    <script>
+        function sumNumbers() {
+            var num = parseInt(prompt("Enter a number: "));
+            var sum = num;
+            while (confirm("Do you want to add another number?")) {
+                num = parseInt(prompt("Enter another number:"));
+                sum += num;
+            }
+            alert("The sum of all numbers is "+sum);
+        }
+    </script>
+</head>
+<body align="center">
+    <h1>Sum of Numbers</h1>
+    <button type="button" onclick="sumNumbers()">
+        Calculate Sum
+    </button>
+</body>
+</html>

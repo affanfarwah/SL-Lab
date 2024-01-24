@@ -1,0 +1,114 @@
+b) Write a PHP Program to display current Date, Time and Day using PHP Script.
+
+
+
+<?php
+date_default_timezone_set ("Asia/Calcutta"); 
+echo "Date: ";
+echo date("d/m/y"); 
+echo "<br> Time: ";
+echo date(" H:i:s A", time()); 
+echo "<br> Day: ";
+$day=date("l"); 
+echo $day;
+?>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(c) A web application that takes name and age from an HTML page. If the age is less than 18, it should send a page with “Hello <name>, you are not authorized to visit the site” message, where <name> should be replaced with the entered name. Otherwise it should send “Welcome <name> to this site”
+message.
+
+
+Checkage.html
+
+<html>
+<body bgcolor="bisque">
+<form action='checkage1.php' method='post'>
+<center> <b> <font color="blue" size="10"> Login </font> </b></center><br> <br> <center>User name: <input type='text' name='name'><br><br>
+Age: <input type='text' name='age'><br><br>
+<input type='submit'value='Login'></center>
+</form>
+</body>
+</html>
+
+Checkage1.html
+
+<?php
+$name = $_POST['name'];
+$age = $_POST['age']; if ($age < 18)
+print "Hello " . $name . " you are not authorized to visit this site."; else
+print "Welcome " . $name . " to this site."
+?>
+
+ 
+
+
+
+ 
+
+ 
+
+
+ 
+
+
+
+(d). A web application that lists all cookies stored in the browser on clicking “List Cookies” button. Add cookies if necessary.
+
+Cookie.php
+
+<html>
+<head> <title> User Acess </title> </head>
+<body bgcolor="bisque"> <br>
+<center>
+<?php
+$firstname = 'aaa';
+$middlename = 'bbb';
+$lastname = 'ccc'; setcookie('first_name',$firstname,time() + 86400);
+setcookie('middle_name',$middlename,time() + 86400);
+setcookie('last_name',$lastname,time() + 86400); print "cookies set";
+?>
+</center>
+</body>
+</html>
+
+Listcookie.php
+<html> 
+<head> <title> Cookie </title> </head> 
+<body bgcolor="GreenYellow"> 
+<center> 
+<form action="" method="post"> 
+ <input type="submit" value="LIST COOKIES" name="list"> 
+</form> 
+</center> 
+<?php 
+error_reporting(0); 
+if($_POST['list']) 
+{ 
+foreach($_COOKIE as $key=>$val) 
+{ 
+echo "<center>".$key." is ".$val."<br> 
+</center>"; 
+} 
+} 
+?>
+</body> 
+</html>

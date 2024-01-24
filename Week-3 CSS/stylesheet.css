@@ -1,0 +1,22 @@
+h1{
+    background-color: white;
+}
+
+body{
+    background-color: aqua;
+}
+
+.a{
+    background-color: goldenrod;
+}
+
+#p1{
+    background-color: gold;
+    width: 30%;
+}
+
+img{
+    height: 25%;
+    width: 25%;
+    opacity: 1;
+}
